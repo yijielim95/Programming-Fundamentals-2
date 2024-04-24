@@ -1,0 +1,22 @@
+<object-stream>
+  <list>
+    <models.Song>
+      <songId>1234</songId>
+      <name>Yijie</name>
+      <artist>
+        <artistName>Taylor Swift</artistName>
+        <verified>true</verified>
+      </artist>
+      <length>140</length>
+    </models.Song>
+    <models.Song>
+      <songId>1235</songId>
+      <name>yijie</name>
+      <artist>
+        <artistName>yijielim</artistName>
+        <verified>false</verified>
+      </artist>
+      <length>400</length>
+    </models.Song>
+  </list>
+</object-stream>
