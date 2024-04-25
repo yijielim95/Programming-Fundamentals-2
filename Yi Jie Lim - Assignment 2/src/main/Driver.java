@@ -250,7 +250,7 @@ public class Driver {
     private void deleteTechnologyDevice(){
         showTechnologyDevices();
         if (techAPI.numberOfTechnologyDevices() > 0){
-            String idToDelete = ScannerInput.readNextLine("Enter the index of the device to delete ==> ");
+            String idToDelete = ScannerInput.readNextLine("Enter the id of the device to delete ==> ");
             Technology deviceToDelete = techAPI.deleteTechnologyById(idToDelete);
             if (deviceToDelete != null){
                 System.out.println("Delete Successful");
