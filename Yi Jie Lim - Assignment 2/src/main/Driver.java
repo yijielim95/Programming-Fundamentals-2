@@ -11,10 +11,7 @@ import java.io.File;
 public class Driver {
     private TechnologyDeviceAPI techAPI;
     private ManufacturerAPI manufacturerAPI;
-
-    private Manufacturer manufacturer1, manufacturer2, manufacturer3;
-    private Tablet tablet;
-
+    private Manufacturer manufacturer, manufacturer1, manufacturer2, manufacturer3;
     public static void main(String[] args) throws Exception {
         new Driver().start();
     }
@@ -23,7 +20,7 @@ public class Driver {
         manufacturerAPI = new ManufacturerAPI(new File("manufacturers.xml"));
         techAPI = new TechnologyDeviceAPI(new File("technologyDevices.xml"));
         //TODO - construct field
-        if(tablet == null){
+        if(manufacturer == null){
             manufacturer1 = new Manufacturer("Samsung",1020);
             manufacturer2 = new Manufacturer("Hitachi",1020);
             manufacturer3 = new Manufacturer("Apple", 1020);
@@ -209,7 +206,6 @@ public class Driver {
                 String modelName = ScannerInput.readNextLine("Enter the Tablet Name: ");
                 double price = ScannerInput.readNextDouble("Enter the Tablet Price: ");
                 String manufacturerName = ScannerInput.readNextLine("Enter the Manufacturer Name: ");
-                System.out.println(manufacturerName);
                 String id = ScannerInput.readNextLine("Enter the Tablet id: ");
                 String processor = ScannerInput.readNextLine("Enter the Tablet Processor: ");
                 int storage = ScannerInput.readNextInt("Enter the Tablet Storage: ");
